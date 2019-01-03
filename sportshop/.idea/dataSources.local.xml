@@ -1,20 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="dataSourceStorageLocal">
-    <data-source name="default@localhost" uuid="8d29ec75-b4d8-418a-8f4a-aac9a333891b">
-      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" />
-      <secret-storage>master_key</secret-storage>
-      <first-sync>true</first-sync>
-      <user-name>sa</user-name>
-    </data-source>
-    <data-source name="jdbc:h2:tcp://localhost/~/test" uuid="6f924f3a-c526-4cea-90cf-61546e2abafc">
+    <data-source name="jdbc:h2:tcp://localhost/~/sportshop" uuid="732737c0-09af-48e5-9b73-517f4df774b5">
       <database-info product="H2" version="1.4.196 (2017-06-10)" jdbc-version="4.0" driver-name="H2 JDBC Driver" driver-version="1.4.196 (2017-06-10)">
         <identifier-quote-string>&quot;</identifier-quote-string>
       </database-info>
       <case-sensitivity plain-identifiers="upper" quoted-identifiers="exact" />
       <secret-storage>master_key</secret-storage>
       <user-name>sa</user-name>
-      <introspection-schemas>TEST:</introspection-schemas>
+      <introspection-schemas>SPORTSHOP:</introspection-schemas>
     </data-source>
   </component>
 </project>
