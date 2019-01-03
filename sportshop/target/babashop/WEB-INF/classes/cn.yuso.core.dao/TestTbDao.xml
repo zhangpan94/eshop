@@ -3,9 +3,9 @@
 <mapper namespace="cn.yuso.core.dao.TestTbDao">
 	<!--  添加测试数据  -->
 	<insert id="addTest" parameterType="TestTable">
-		insert into test_tb
-		(name,birthday)
+		insert into TEST
+
 		values
-		(#{name},#{birthday})
+		(#{id},#{name})
 	</insert>
 </mapper>

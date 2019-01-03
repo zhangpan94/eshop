@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>  
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.yuso.core.dao">
+	<resultMap id="brand" type="Brand">
+		<result column="id" property="id"/>
+		<result column="name" property="name"/>
+		<result column="description" property="description"/>
+		<result column="img_url" property="imgUrl"/>
+		<result column="web_site" property="webSite"/>
+		<result column="sort" property="sort"/>
+		<result column="is_display" property="isDisplay"/>
+	</resultMap>
+	<!--  查询品牌 get*  -->
+	<select id="getBrandListWithPage" parameterType="Brand" resultMap="brand">
+		select id,name,description,img_url,sort,is_display
+		from bbs_brand
+		where is_display=#{isDisplay}
+		order by id desc
+		limit 0,5;
+	</select>
+</mapper>
